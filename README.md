@@ -1,0 +1,2 @@
+# minishop
+Demo Extension
