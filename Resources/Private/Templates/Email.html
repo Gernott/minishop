@@ -1,0 +1,73 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+
+
+<f:section name="content">
+    <h1><f:translate key="bookingThanks" extensionName="Minishop"/></h1>
+
+
+    <table class="table table-striped table-bordered">
+        <thead>
+        <tr>
+            <th class="text-right">
+                <f:translate key="tx_minishop_domain_model_position.quantity"/>
+            </th>
+            <th>
+                <f:translate key="tx_minishop_domain_model_position.product"/>
+            </th>
+            <th class="text-right">
+                <f:translate key="tx_minishop_domain_model_product.price"/>
+            </th>
+            <th class="text-right">
+                <f:translate key="tx_minishop_domain_model_position.totalPrice"/>
+            </th>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr>
+            <td colspan="3"><f:translate key="tx_minishop_domain_model_position.totalPrice"/></td>
+            <td class="text-right">{booking.fullPrice}</td>
+        </tr>
+        </tfoot>
+        <tbody>
+        <f:for each="{booking.positions}" as="position">
+            <tr>
+                <td class="text-right">
+                    {position.quantity}
+                </td>
+                <td>
+                    {position.product.title}
+                </td>
+                <td class="text-right">
+                    <f:format.currency thousandsSeparator="." decimalSeparator="," currencySign="€">
+                        {position.product.price}
+                    </f:format.currency>
+                </td>
+                <td class="text-right">
+                    <f:format.currency thousandsSeparator="." decimalSeparator="," currencySign="€">
+                        {position.fullPrice}
+                    </f:format.currency>
+                </td>
+            </tr>
+        </f:for>
+        </tbody>
+    </table>
+
+
+    <div class="card" style="width:200px">
+        <div class="card-body">
+            {booking.name} <br/>
+            {booking.adress} <br/>
+            {booking.zip} {booking.city} <br/>
+            {booking.country.nameLocalized}<br/>
+            <f:link.email class="card-link" email="{booking.adress}"></f:link.email>
+            <br/>
+            <a href="tel:{booking.telephone}" class="card-link">{booking.telephone}</a>
+
+        </div>
+    </div>
+
+
+    <f:link.action action="new"><f:translate key="orderAgain"/></f:link.action>
+</f:section>
+</html>

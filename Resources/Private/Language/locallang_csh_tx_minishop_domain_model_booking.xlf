@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:minishop/Resources/Private/Language/locallang_csh" date="2020-06-22T05:35:00Z" product-name="minishop">
+		<header/>
+		<body>
+			<trans-unit id="name.description" resname="name.description">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="adress.description" resname="adress.description">
+				<source>Adress</source>
+			</trans-unit>
+			<trans-unit id="zip.description" resname="zip.description">
+				<source>Zip</source>
+			</trans-unit>
+			<trans-unit id="city.description" resname="city.description">
+				<source>City</source>
+			</trans-unit>
+			<trans-unit id="email.description" resname="email.description">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="telephone.description" resname="telephone.description">
+				<source>Telephone</source>
+			</trans-unit>
+			<trans-unit id="positions.description" resname="positions.description">
+				<source>Positions</source>
+			</trans-unit>
+			<trans-unit id="country.description" resname="country.description">
+				<source>Country</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,42 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:shop="http://typo3.org/ns/TYPO3Kurs/Minishop/ViewHelpers" data-namespace-typo3-fluid="true">
+
+
+
+
+<h1>{product.title} <span class="badge badge-primary">
+    <f:format.currency thousandsSeparator="."
+                       decimalSeparator=","
+                       currencySign="€">
+            {product.price}
+        </f:format.currency>
+</span></h1>
+
+<shop:formatPrice price="{product.price}"/>
+
+
+<div class="row">
+    <div class="col">
+        <f:for each="{product.images}" as="image" iteration="counter">
+            <f:if condition="{counter.isFirst}">
+                <f:then>
+                    <f:render partial="Product/Image" arguments="{image:image, width:200}"/>
+                    <br/>
+                </f:then>
+                <f:else>
+                    <f:render partial="Product/Image" arguments="{image:image, width:100}"/>
+                    <f:if condition="{counter.isOdd}">
+                        <br/>
+                    </f:if>
+                </f:else>
+            </f:if>
+        </f:for>
+    </div>
+    <div class="col">
+        <f:format.html>{product.description}</f:format.html>
+
+        <f:link.action class=" btn btn-primary" action="new" controller="Booking">New Booking</f:link.action>
+    </div>
+</div>
+
+</html>

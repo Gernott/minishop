@@ -1,0 +1,48 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<label for="name">
+    <f:translate key="tx_minishop_domain_model_booking.name"/>
+    <span class="required">(required)</span>
+</label><br/>
+<f:form.textfield property="name" id="name" class="form-control"/>
+<br/>
+<label for="adress">
+    <f:translate key="tx_minishop_domain_model_booking.adress"/>
+    <span class="required">(required)</span>
+</label><br/>
+<f:form.textfield property="adress" id="adress" class="form-control"/>
+<br/>
+<label for="zip">
+    <f:translate key="tx_minishop_domain_model_booking.zip"/>
+    <span class="required">(required)</span>
+</label><br/>
+<f:form.textfield property="zip" id="zip" class="form-control"/>
+<br/>
+<label for="city">
+    <f:translate key="tx_minishop_domain_model_booking.city"/>
+    <span class="required">(required)</span>
+</label><br/>
+<f:form.textfield property="city" id="city" class="form-control"/>
+<br/>
+<label for="country">
+    <f:translate key="tx_minishop_domain_model_booking.country"/>
+    <span class="required">(required)</span>
+</label><br/>
+<f:variable name="choose">
+    <f:translate key="LLL:EXT:core/Resources/Private/Language/locallang_core.xlf:file_upload.actions.all.empty"/>
+</f:variable>
+<f:form.select property="country" id="country" class="form-control" options="{countries}" optionLabelField="nameLocalized"
+               optionValueField="uid" prependOptionLabel="{choose}" prependOptionValue=""
+               additionalAttributes="{required:required}"/>
+<br/>
+<label for="email">
+    <f:translate key="tx_minishop_domain_model_booking.email"/>
+    <span class="required">(required)</span>
+</label><br/>
+<f:form.textfield property="email" id="email" class="form-control"/>
+<br/>
+<label for="telephone">
+    <f:translate key="tx_minishop_domain_model_booking.telephone"/>
+</label><br/>
+<f:form.textfield property="telephone" id="telephone" class="form-control"/>
+<br/>
+</html>

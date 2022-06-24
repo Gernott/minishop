@@ -1,0 +1,28 @@
+{
+    "name": "typo3kurs/minishop",
+    "type": "typo3-cms-extension",
+    "description": "Minishop for the lecture",
+    "authors": [
+        {
+            "name": "winki",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "TYPO3Kurs\\Minishop\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TYPO3Kurs\\Minishop\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "typo3kurs/minishop": "self.version",
+        "typo3-ter/minishop": "self.version"
+    }
+}

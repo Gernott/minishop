@@ -1,0 +1,46 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+
+
+
+<f:section name="content">
+
+    <h1><f:translate key="newBooking"/></h1>
+
+
+    <f:render partial="FormErrors"/>
+
+    <f:form action="create" name="newBooking" object="{newBooking}">
+        <f:if condition="{products}">
+            <f:for as="product" each="{products}">
+                <div class="card">
+                    <f:image image="{product.images.0}" alt="{product.images.0.alternative}" height="100"/>
+                    <div class="card-body">
+                        <h5 class="card-title">{product.title}</h5>
+                        <p class="card-text">
+                            <f:format.nl2br>{product.teaser}</f:format.nl2br>
+                        </p>
+                        <p class="card-text">
+                            <f:format.currency thousandsSeparator="." decimalSeparator="," currencySign="€">
+                                {product.price}
+                            </f:format.currency>
+                        </p>
+
+
+                        <label for="quantity">
+                            Anzahl
+                        </label>
+                        <f:form.hidden property="positions.{product.uid}.product" value="{product}"/>
+                        <f:form.textfield name="quantity" class="form-control" property="positions.{product.uid}.quantity" /><br />
+
+                        <f:link.action action="show" controller="Product" arguments="{product:product}">Details
+                        </f:link.action>
+                    </div>
+                </div>
+            </f:for>
+        </f:if>
+        <f:render partial="Booking/FormFields" arguments="{countries:countries}"/>
+        <f:form.submit value="Create new" class="btn btn-primary"/>
+    </f:form>
+</f:section>
+</html>

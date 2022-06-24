@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="EXT:minishop/Resources/Private/Language/locallang" date="2020-06-22T05:35:00Z" product-name="minishop">
+		<header/>
+		<body>
+			<trans-unit id="tx_minishop_domain_model_booking" resname="tx_minishop_domain_model_booking">
+				<target>Bestellung</target>
+			</trans-unit>
+			<trans-unit id="tx_minishop_domain_model_booking.name" resname="tx_minishop_domain_model_booking.name">
+				<target>Name</target>
+			</trans-unit>
+			<trans-unit id="tx_minishop_domain_model_booking.adress" resname="tx_minishop_domain_model_booking.adress">
+				<target>Adresse</target>
+			</trans-unit>
+			<trans-unit id="tx_minishop_domain_model_booking.zip" resname="tx_minishop_domain_model_booking.zip">
+				<target>PLZ</target>
+			</trans-unit>
+			<trans-unit id="tx_minishop_domain_model_booking.city" resname="tx_minishop_domain_model_booking.city">
+				<target>Stadt</target>
+			</trans-unit>
+			<trans-unit id="tx_minishop_domain_model_booking.email" resname="tx_minishop_domain_model_booking.email">
+				<target>Email</target>
+			</trans-unit>
+			<trans-unit id="tx_minishop_domain_model_booking.telephone" resname="tx_minishop_domain_model_booking.telephone">
+				<target>Telefon</target>
+			</trans-unit>
+			<trans-unit id="tx_minishop_domain_model_booking.positions" resname="tx_minishop_domain_model_booking.positions">
+				<target>Positionen</target>
+			</trans-unit>
+			<trans-unit id="tx_minishop_domain_model_booking.country" resname="tx_minishop_domain_model_booking.country">
+				<target>Land</target>
+			</trans-unit>
+			<trans-unit id="tx_minishop_domain_model_position" resname="tx_minishop_domain_model_position">
+				<target>Position</target>
+			</trans-unit>
+			<trans-unit id="tx_minishop_domain_model_position.quantity" resname="tx_minishop_domain_model_position.quantity">
+				<target>Anzahl</target>
+			</trans-unit>
+			<trans-unit id="tx_minishop_domain_model_position.product" resname="tx_minishop_domain_model_position.product">
+				<target>Produkt</target>
+			</trans-unit>
+			<trans-unit id="tx_minishop_domain_model_product" resname="tx_minishop_domain_model_product">
+				<target>Produkt</target>
+			</trans-unit>
+			<trans-unit id="tx_minishop_domain_model_product.title" resname="tx_minishop_domain_model_product.title">
+				<target>Titel</target>
+			</trans-unit>
+			<trans-unit id="tx_minishop_domain_model_product.teaser" resname="tx_minishop_domain_model_product.teaser">
+				<target>Teaser</target>
+			</trans-unit>
+			<trans-unit id="tx_minishop_domain_model_product.description" resname="tx_minishop_domain_model_product.description">
+				<target>Beschreibung</target>
+			</trans-unit>
+			<trans-unit id="tx_minishop_domain_model_product.images" resname="tx_minishop_domain_model_product.images">
+				<target>Bilder</target>
+			</trans-unit>
+			<trans-unit id="tx_minishop_domain_model_product.price" resname="tx_minishop_domain_model_product.price">
+				<target>Preis</target>
+			</trans-unit>
+			<trans-unit id="bookingThanks" resname="bookingThanks">
+				<target>Danke für ihre Bestellung!</target>
+			</trans-unit>
+			<trans-unit id="orderAgain" resname="orderAgain">
+				<target>weiter bestellen</target>
+			</trans-unit>
+			<trans-unit id="tx_minishop_domain_model_position.totalPrice" resname="tx_minishop_domain_model_position.totalPrice">
+				<target>Gesamtpreis</target>
+			</trans-unit>
+			<trans-unit id="newBooking" resname="newBooking">
+				<target>neue Bestellung</target>
+			</trans-unit>
+			<trans-unit id="mailSubject" resname="mailSubject">
+				<target>ihre Bestellung</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

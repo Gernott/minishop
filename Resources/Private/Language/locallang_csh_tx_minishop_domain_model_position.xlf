@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:minishop/Resources/Private/Language/locallang_csh" date="2020-06-22T05:35:00Z" product-name="minishop">
+		<header/>
+		<body>
+			<trans-unit id="quantity.description" resname="quantity.description">
+				<source>Quantity</source>
+			</trans-unit>
+			<trans-unit id="product.description" resname="product.description">
+				<source>Product</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
